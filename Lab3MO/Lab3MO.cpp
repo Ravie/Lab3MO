@@ -35,30 +35,23 @@ int main()
 	long double x0, l, eps, a, b;
 	cout << "Введите погрешность: ";
 	cin >> eps;
-	a = 0;
-	b = 3;
-	/*
 	cout << "Введите начальную точку: ";
 	cin >> a;
 	cout << "Введите конечную точку: ";
 	cin >> b;
-	*/
+	
 	passive_search(eps, a, b);
 
 	dichotomy(eps, a, b);
-	/*
+	
 	cout << "Введите допустимую конечную длину интервала неопределенности: ";
 	cin >> l;
-	*/
-	l = eps;
 	Fibonacci(l, eps, a, b);
 
 	golden_section(eps, a, b);
-	/*
+	
 	cout << "Начальное приближение: ";
 	cin >> x0;
-	*/
-	x0 = 0;
 	Newton(x0, eps, a, b);
 
     return 0;
